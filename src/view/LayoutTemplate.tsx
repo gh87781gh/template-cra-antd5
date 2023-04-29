@@ -1,15 +1,12 @@
-import { HashRouter, Route, Routes } from 'react-router-dom'
-
-// import Nav from './layout/Nav'
-// import Home from './Home'
+// import { HashRouter, Route, Routes } from 'react-router-dom'
 
 const LayoutTemplate = (): JSX.Element => {
   return (
-    <article className="aha-article">
-      {/* <Nav /> */}
-      <HashRouter>
-        <Routes>{/* <Route element={<Home />} path="/" /> */}</Routes>
-      </HashRouter>
+    <article className="article">
+      test
+      {/* <HashRouter>
+        <Routes><Route element={<Home />} path="/" /> </Routes>
+      </HashRouter>*/}
     </article>
   )
 }
