@@ -19,7 +19,6 @@
     "@typescript-eslint/explicit-function-return-type": [
       "error",
       { "allowTypedFunctionExpressions": false }
-    ],
-    "no-explicit-any": 0
+    ]
   }
 }
