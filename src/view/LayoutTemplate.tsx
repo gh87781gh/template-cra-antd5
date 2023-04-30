@@ -2,7 +2,6 @@
 import { BtnGroup, Btn } from 'component/Button'
 
 const LayoutTemplate = (): JSX.Element => {
-  console.log(process.env.REACT_APP_ENV)
   return (
     <article className="article">
       test

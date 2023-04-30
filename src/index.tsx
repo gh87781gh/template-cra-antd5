@@ -3,12 +3,21 @@ import ReactDOM from 'react-dom/client'
 import LayoutTemplate from 'view/LayoutTemplate'
 import GlobalStyle from 'component/GlobalStyles'
 import reportWebVitals from './reportWebVitals'
+import { ConfigProvider } from 'antd'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
   <React.StrictMode>
-    <GlobalStyle />
-    <LayoutTemplate />
+    <ConfigProvider
+      theme={{
+        token: {
+          colorPrimary: '#00b96b',
+        },
+      }}
+    >
+      <GlobalStyle />
+      <LayoutTemplate />
+    </ConfigProvider>
   </React.StrictMode>
 )
 
