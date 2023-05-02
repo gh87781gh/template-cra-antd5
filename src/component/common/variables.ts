@@ -1,5 +1,5 @@
 export const colors = {
-  primary: '#1a4499',
+  primary: '#00A9B4',
 }
 
 // responsive

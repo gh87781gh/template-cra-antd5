@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Button } from 'antd'
-import { colors } from './variables'
+import { colors } from './common/variables'
 
 export const BtnGroup = styled.div`
   > .ant-btn:not(:last-child) {
@@ -12,7 +12,7 @@ export const Btn = styled(Button)`
   // color: ${colors.primary};
 
   // or
-  &.ant-btn {
-    color: ${colors.primary};
-  }
+  // &.ant-btn {
+  //   color: ${colors.primary};
+  // }
 `

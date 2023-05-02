@@ -1,9 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import LayoutTemplate from 'view/LayoutTemplate'
-import GlobalStyle from 'component/GlobalStyles'
+import { GlobalResetStyle, GlobalStyle } from 'component/common/GlobalStyles'
 import reportWebVitals from './reportWebVitals'
 import { ConfigProvider } from 'antd'
+import { colors } from 'component/common/variables'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
@@ -11,10 +12,11 @@ root.render(
     <ConfigProvider
       theme={{
         token: {
-          colorPrimary: '#00b96b',
+          colorPrimary: colors.primary,
         },
       }}
     >
+      <GlobalResetStyle />
       <GlobalStyle />
       <LayoutTemplate />
     </ConfigProvider>
